@@ -16,6 +16,7 @@ function adjustHealthBars(maxLife) {
 
 function dealMonsterDamage(damage) {
   const dealtDamage = Math.random() * damage;
+  console.log('console log dealMosnter Damage', dealtDamage, damage);
   monsterHealthBar.value = +monsterHealthBar.value - dealtDamage;
   return dealtDamage;
 }
